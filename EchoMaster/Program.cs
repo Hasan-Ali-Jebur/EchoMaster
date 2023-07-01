@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
+using DevExpress.XtraEditors;
 
 namespace EchoMaster
 {
@@ -15,6 +16,8 @@ namespace EchoMaster
         [STAThread]
         static void Main()
         {
+            WindowsFormsSettings.RightToLeft = DevExpress.Utils.DefaultBoolean.True;
+            WindowsFormsSettings.RightToLeftLayout = DevExpress.Utils.DefaultBoolean.True;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainView());
